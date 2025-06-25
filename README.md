@@ -86,7 +86,7 @@ LAN 기반 멀티플레이 환경에서 친구와 함께 플레이할 수 있습
 | 문제                                          | 해결 방법                                                    |
 | --------------------------------------------- | ------------------------------------------------------------ |
 | 클라이언트에서만 문이 열리는 현상             | ![DMCharacterPlayer](images/DuoMech/OpenBlockerDoorMultiplay.png)<br />상태 변경을 서버에서 처리 + `Multicast` 함수로 모든 클라이언트에 전달 |
-| 키 입력이 없을 때 HUD 키 색상이 변경되지 않음 | ![DMCharacterPlayer](images/DuoMech/HUDSetColorAndOpacityBug.Png)<br />`EnhancedInput` 이벤트 바인딩에 `Complete` 트리거를 추가해 해결 |
+| 키 입력이 없을 때 HUD 키 색상이 변경되지 않음 | ![DMCharacterPlayer](images/DuoMech/HUDSetColorAndOpacityBug.png)<br />`EnhancedInput` 이벤트 바인딩에 `Complete` 트리거를 추가해 해결 |
 | 플레이어 리스폰 위치가 동일함                 | ![DMStageManager](images/DuoMech/SetCharacterRespawnLocation.png)<br />`EPlayerRole` 기준으로 `DMStageManager`에서 위치 분기 |
 | 레이저 타이밍 동기화 문제                     | ![DMCharacterPlayer](images/DuoMech/SpawnLaser1.png)<br />![DMCharacterPlayer](images/DuoMech/SpawnLaser2.png)<br />`TimerHandle` 기반 생성 주기 동기화 + 역할별 방향 분기 처리 |
 | 적 AI 캐릭터 정찰 도중 정지                   | ![DMCharacterExploder](images/DuoMech/ExploderPatrol.png)<br />정찰 로직 조건문에 AI 캐릭터 상태 확인 구문 추가 |
